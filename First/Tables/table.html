@@ -1,22 +1,28 @@
 <table>
     <caption>Produced X Sold by store</caption>
 
+    <colgroup>
+        <col>
+        <col span="2" style="background-color: green;">
+        <col span="2" style="background-color: blue;">
+    </colgroup>
+
     <thead>
         <tr>
-            <th rowspan="2"></th> <th colspan="2">Store 1</th> <th colspan="2">Store 2</th>
+            <th rowspan="2"></th> <th colspan="2" scope="colgroup">Store 1</th> <th colspan="2" scope="colgroup">Store 2</th>
         </tr>
         
         <tr>
-            <th>Produced</th>
-            <th>Sold</th>
-            <th>Produced</th>
-            <th>Sold</th>
+            <th scope="col">Produced</th>
+            <th scope="col">Sold</th>
+            <th scope="col">Produced</th>
+            <th scope="col">Sold</th>
         </tr>
     </thead>
     
     <tbody>
         <tr>
-            <th>Product 1</th>
+            <th scope="row">Product 1</th>
             <td>15</td>
             <td>5</td>
             <td>10</td>
@@ -24,7 +30,7 @@
         </tr>
 
         <tr>
-            <th>Product 2</th>
+            <th scope="row">Product 2</th>
             <td>20</td>
             <td>14</td>
             <td>13</td>
@@ -35,7 +41,7 @@
     <tfoot>
         <tr>
             <tr>
-                <th>Total</th>
+                <th scope="row">Total</th>
                 <td>35</td>
                 <td>19</td>
                 <td>23</td>
